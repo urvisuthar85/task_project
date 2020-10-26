@@ -1,0 +1,18 @@
+<h1><center>hello welcome here </center></h1>
+
+<center>
+{% if usr.is_login %}
+
+<!-- <h3><a href="{% url 'logout' %}">logout {{ usr }}</a></h3> -->
+
+<h3><a href="{% url 'login' %}">login</a></h3>
+
+
+{% else %}
+<h3><a href="{% url 'register' %}">register</a></h3>
+
+<h3><a href="{% url 'login' %}">login</a></h3>
+
+<h3><a href="{% url 'logout' %}">logout</a></h3>
+{% endif %}
+</center>
